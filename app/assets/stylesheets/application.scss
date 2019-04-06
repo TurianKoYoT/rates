@@ -2,3 +2,9 @@
 
 @import "variables";
 @import "bootstrap";
+
+@import "user_interface/**/*";
+
+.navbar {
+  margin-bottom: 1em;
+}
