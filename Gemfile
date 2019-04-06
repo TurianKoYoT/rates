@@ -4,7 +4,9 @@ ruby '2.6.1'
 
 gem 'pg'
 gem 'rails', '~> 5.2.0'
+gem 'rubocop', '~> 0.67.2', require: false
 gem 'sassc-rails'
+gem 'travis'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails'
