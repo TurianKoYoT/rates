@@ -46,8 +46,14 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     arel (9.0.0)
     ast (2.4.0)
+    autoprefixer-rails (9.5.0)
+      execjs
     backports (3.13.0)
     bindex (0.6.0)
+    bootstrap (4.3.1)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 1.14.3, < 2)
+      sassc-rails (>= 2.0.0)
     builder (3.2.3)
     byebug (11.0.1)
     capybara (3.16.1)
@@ -115,6 +121,7 @@ GEM
     parser (2.6.2.1)
       ast (~> 2.4.0)
     pg (1.1.4)
+    popper_js (1.14.5)
     psych (3.1.0)
     public_suffix (3.0.3)
     pusher-client (0.6.2)
@@ -229,6 +236,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap (~> 4.3.1)
   byebug
   capybara
   jquery-rails
