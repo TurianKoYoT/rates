@@ -8,6 +8,7 @@ require 'rspec/rails'
 require 'capybara/rails'
 require 'capybara/rspec'
 require 'selenium/webdriver'
+require 'webmock/rspec'
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
@@ -34,6 +35,8 @@ end
 
 Capybara.javascript_driver = :headless_chrome
 Capybara.default_driver = :headless_chrome
+
+WebMock.disable_net_connect!(allow_localhost: true)
 
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
