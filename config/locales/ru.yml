@@ -1,3 +1,5 @@
 ru:
   admin:
     title: 'Ручной ввод'
+  currency:
+    USD: 'Американский доллар'

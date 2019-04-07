@@ -1,21 +1,86 @@
 inherit_mode:
   merge:
     - Exclude
-
 AllCops:
-  Exclude:
-    - db/schema.rb
-    - bin/*
   TargetRubyVersion: 2.6.1
-
+  Exclude:
+    - 'bin/*'
+    - 'scripts/**/*'
+    - 'db/**/*'
+Rails:
+  Enabled: true
 Metrics/LineLength:
   Max: 120
-
-Style/FrozenStringLiteralComment:
+  AllowHeredoc: true
+  AllowURI: true
+Metrics/MethodLength:
+  Max: 30
+Metrics/AbcSize:
+  Max: 25
+Style/GuardClause:
+  MinBodyLength: 1
+Style/AndOr:
+  EnforcedStyle: conditionals
+Style/PercentLiteralDelimiters:
   Enabled: false
-
+  PreferredDelimiters: {}
+Style/Alias:
+  Enabled: false
 Style/Documentation:
   Enabled: false
-
-Style/ExpandPathArguments:
+Metrics/ModuleLength:
   Enabled: false
+Style/StringLiterals:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Metrics/BlockLength:
+  ExcludedMethods:
+    - 'task'
+    - 'namespace'
+    - 'get'
+    - 'post'
+    - 'describe'
+    - 'context'
+    - 'specify'
+    - 'it'
+    - 'feature'
+    - 'scenario'
+    - 'route_param'
+    - 'draw'
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Layout/DotPosition:
+  EnforcedStyle: 'trailing'
+Layout/BlockAlignment:
+  EnforcedStyleAlignWith: 'start_of_line'
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: 'start_of_line'
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+Layout/CaseIndentation:
+  EnforcedStyle: 'end'
+  IndentOneStep: false
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: 'indented'
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: 'comma'
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: 'comma'
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: 'comma'
+Style/EmptyCaseCondition:
+  Enabled: false
+Naming/VariableNumber:
+  EnforcedStyle: 'snake_case'
+Style/FormatString:
+  EnforcedStyle: 'percent'
+Style/FormatStringToken:
+  Enabled: false
+Style/SymbolArray:
+  EnforcedStyle: 'brackets'
+Style/WordArray:
+  Enabled: false
+Style/EmptyMethod:
+  EnforcedStyle: 'expanded'
