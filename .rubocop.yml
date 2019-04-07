@@ -84,3 +84,6 @@ Style/WordArray:
   Enabled: false
 Style/EmptyMethod:
   EnforcedStyle: 'expanded'
+Style/ExpandPathArguments:
+  Exclude:
+    - 'spec/rails_helper.rb'
