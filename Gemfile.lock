@@ -157,6 +157,8 @@ GEM
       json
       websocket (~> 1.0)
     rack (2.0.7)
+    rack-protection (2.0.5)
+      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.3)
@@ -235,6 +237,11 @@ GEM
     selenium-webdriver (3.141.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2, >= 1.2.2)
+    sidekiq (5.2.5)
+      connection_pool (~> 2.2, >= 2.2.2)
+      rack (>= 1.5.0)
+      rack-protection (>= 1.5.0)
+      redis (>= 3.3.5, < 5)
     spring (2.0.2)
       activesupport (>= 4.2)
     sprockets (3.7.2)
@@ -304,6 +311,7 @@ DEPENDENCIES
   rspec-rails
   rubocop (~> 0.67.2)
   sassc-rails
+  sidekiq
   spring
   travis
   uglifier (>= 1.3.0)

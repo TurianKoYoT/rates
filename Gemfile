@@ -11,6 +11,7 @@ gem 'redis'
 gem 'rest-client'
 gem 'rubocop', '~> 0.67.2', require: false
 gem 'sassc-rails'
+gem 'sidekiq'
 gem 'travis'
 gem 'uglifier', '>= 1.3.0'
 gem 'whenever', require: false

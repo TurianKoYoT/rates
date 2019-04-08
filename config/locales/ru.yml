@@ -3,3 +3,7 @@ ru:
     title: 'Ручной ввод'
   currency:
     USD: 'Американский доллар'
+  helpers:
+    submit:
+      rate:
+        update: 'Форсировать курс'
