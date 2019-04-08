@@ -7,6 +7,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.0'
+gem 'redis'
 gem 'rest-client'
 gem 'rubocop', '~> 0.67.2', require: false
 gem 'sassc-rails'
