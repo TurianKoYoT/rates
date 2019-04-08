@@ -34,4 +34,9 @@ describe UpdateRatesData do
     expect(usd_rate.reload.value).to eq usd_future_rate
     expect(eur_rate.reload.value).to eq eur_future_rate
   end
+
+  it 'broadcasts id and new html' do
+    pending "wait for final release rails 6.0 for Rspec team to add method to test ActionCable"
+    this_should_not_get_executed
+  end
 end
