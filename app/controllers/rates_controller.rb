@@ -17,4 +17,8 @@ class RatesController < ApplicationController
     BroadcastRate.new(rate).broadcast
     ChangeValueToNormalWorker.perform_at(rate.forced_until, rate.id, old_value)
   end
+
+  def update_rates_data
+    UpdateRatesData.update
+  end
 end
