@@ -10,7 +10,9 @@
   <%= action_cable_meta_tag %>
 </head>
 <body class="<%= current_page_name %>">
-  <%= render 'menu' %>
+  <div class='top-bar'>
+    <%= render 'menu' %>
+  </div>
   <%= yield %>
 </body>
 </html>
