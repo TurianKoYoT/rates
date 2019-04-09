@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :rates, only: [:index, :update]
 
+  post '/update_rates_data' => 'rates#update_rates_data'
   root 'rates#index'
 
   mount Sidekiq::Web, at: '/sidekiq'
