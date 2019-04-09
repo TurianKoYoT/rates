@@ -1,1 +1,11 @@
 <% content_for(:title) { t("admin.title") } %>
+
+<div class="container-fluid">
+  <div class="row text-center">
+    <% @rates.each do |rate| %>
+      <div class="col-md-4 col-lg-3">
+        <%= render 'forced_rate_widget', rate: rate %>
+      </div>
+    <% end %>
+  </div>
+</div>
